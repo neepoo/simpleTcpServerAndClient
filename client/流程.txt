@@ -1,0 +1,9 @@
+1. 客户端先发送数据的长度给server
+    分析思路：
+        先确定message的格式和结构
+
+        在服务器中:
+            main.go监听（8889端口）
+            过来一个请求，起一个goroutine，和客户端的端口有联系，进行通信
+
+        在client中(main/login,utils.go)
